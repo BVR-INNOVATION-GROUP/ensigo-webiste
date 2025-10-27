@@ -1,26 +1,68 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer base {
+  body {
+    font-family: var(--font-poppins);
+    font-size: 13px;
+    transition: 0.3s;
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --primary: #1d7c2e;
+    --foreground: #f9f9f9;
+    --background: #f4f4f4;
+    --dark-background: #ebebeb;
+    --dark: #010a00;
+    --primary-dark: #1c732c;
+    --primary-very-dark: #4a4f32;
+    --placeholder: #cfcfcf;
+    --gradient: linear-gradient(140deg, #1d7c2e, #80b64d);
+    --secondary: #80b64d;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.shadow-custom {
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
+}
+
+@layer utilities {
+  .text-primary {
+    color: var(--primary);
+  }
+  .border-pale {
+    border-color: var(--background);
+  }
+  .bg-secondary {
+    background-color: var(--secondary);
+  }
+  .gradient {
+    background: var(--gradient);
+    color: var(--background);
+  }
+  .font-impact {
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .font-serif {
+    font-family: "Times New Roman", Times, serif;
+  }
+  .bg-paper {
+    background-color: var(--foreground);
+  }
+  .bg-pale {
+    background-color: var(--background);
+  }
+  .bg-pale-dark {
+    background-color: var(--dark-background);
+  }
+  .bg-primary {
+    background-color: var(--primary);
+    color: white;
+  }
+  .text-primary {
+    color: var(--primary);
+  }
+  .bg-dark {
+    background-color: var(--dark);
+    color: var(--background);
+  }
 }
