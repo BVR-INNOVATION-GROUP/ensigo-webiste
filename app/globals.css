@@ -1,13 +1,14 @@
+/* 1️⃣ Place @import at the very top */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+/* 2️⃣ Then Tailwind import */
 @import "tailwindcss";
 
+/* 3️⃣ Base layer */
 @layer base {
-  body {
-    font-family: var(--font-poppins);
-    font-size: 13px;
-    transition: 0.3s;
-  }
-
   :root {
+    --font-poppins: 'Poppins', sans-serif;
+
     --primary: #1d7c2e;
     --foreground: #f9f9f9;
     --background: #f4f4f4;
@@ -19,13 +20,20 @@
     --gradient: linear-gradient(140deg, #1d7c2e, #80b64d);
     --secondary: #80b64d;
   }
+
+  body {
+    font-family: var(--font-poppins);
+    font-size: 13px;
+    transition: 0.3s;
+  }
 }
 
-.shadow-custom {
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
-}
-
+/* 4️⃣ Utilities */
 @layer utilities {
+  .shadow-custom {
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.02);
+  }
+
   .text-primary {
     color: var(--primary);
   }
@@ -57,9 +65,6 @@
   .bg-primary {
     background-color: var(--primary);
     color: white;
-  }
-  .text-primary {
-    color: var(--primary);
   }
   .bg-dark {
     background-color: var(--dark);

@@ -44,7 +44,7 @@ const Navbar = () => {
 
   const pathname = usePathname()
 
-  const whiteList = ["about", "work", "impact",]
+  const whiteList = ["about", "work", "impact","trace"]
   const blurList = []
   const currentPath = pathname?.slice(1,)
   const isWhiteListed = whiteList.includes(currentPath)
