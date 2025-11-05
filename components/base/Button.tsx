@@ -3,12 +3,14 @@ import React, { HTMLAttributes } from 'react'
 export interface ButtonI extends HTMLAttributes<HTMLButtonElement> {
     title: string
     disabled?: boolean
+    icon?: React.ReactNode
     variant?: "fill" | "outline" | "outline-bottom" | ""
     leftIcon?: React.ReactNode
+    rightIcon?:React.ReactNode
     color?: "primary" | "dark"
 }
 
-const Button: React.FC<ButtonI> = ({ title, disabled, variant, leftIcon, color, className, ...attr }) => {
+const Button: React.FC<ButtonI> = ({ title, disabled, variant, rightIcon, leftIcon, color, className, ...attr }) => {
 
     const getBackgroundColor = () => {
         switch (color) {
@@ -27,6 +29,7 @@ const Button: React.FC<ButtonI> = ({ title, disabled, variant, leftIcon, color, 
         >
             {leftIcon && leftIcon}
             {title}
+            {rightIcon && rightIcon}
         </button>
     )
 }

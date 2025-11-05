@@ -3,12 +3,13 @@ import React, { Activity } from 'react'
 export interface Props {
     heading: string
     caption?: string
+    className?:string
     leftAlign?: boolean
 }
 
-const SectionHeader: React.FC<Props> = ({ heading, caption, leftAlign }) => {
+const SectionHeader: React.FC<Props> = ({ heading, caption, leftAlign, className }) => {
     return (
-        <div className={`${!leftAlign && "text-center"} mb-6`}>
+        <div className={`${!leftAlign && "text-center"} mb-6 text-foreground ${className}`}>
             <h3 className='font-[600] text-xl'>{heading}</h3>
             <Activity mode={caption ? "visible" : "hidden"}>
                 <p className='mt-2'>{caption}</p>
