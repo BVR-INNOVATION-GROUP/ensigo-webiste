@@ -1,7 +1,7 @@
-import React, { Activity } from 'react'
+import React, { Activity, ReactNode } from 'react'
 
 export interface Props {
-    heading: string
+    heading: string | ReactNode
     caption?: string
     className?:string
     leftAlign?: boolean
