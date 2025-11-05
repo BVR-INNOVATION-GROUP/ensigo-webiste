@@ -27,7 +27,7 @@ const Features = () => {
 
   return (
     <div
-      className="w-full min-h-[600px] px-6 sm:px-10 py-16 relative font-sans"
+      className=" min-h-[600px] px-6 sm:px-10 py-16 relative font-sans"
       style={{ backgroundColor: "var(--dark)" }}
     >
       {/* Key Features heading at top-left */}

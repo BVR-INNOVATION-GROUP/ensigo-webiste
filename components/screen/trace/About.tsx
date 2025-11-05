@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full h-[390] p-6 shadow-md font-sans flex flex-col justify-between">
+    <div className=" h-[390] p-6 font-sans flex flex-col justify-between">
       {/* Section Header */}
       <SectionHeader 
         heading={<>What is Ensigo <span className="text-primary">Trace?</span></>}

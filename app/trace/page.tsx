@@ -14,12 +14,16 @@ const page = () => {
       <Container>
         <About />
       </Container>
-      <div className="bg-[var(--primary)]">
+      <div className="bg-[var(--dark)]">
         <Container>
           <Features />
         </Container>
       </div>
-      <FunctionW />
+        <div>
+          <Container>
+            <FunctionW />
+          </Container>
+        </div>
       <Solutions />
       <Experience />
     </div>
