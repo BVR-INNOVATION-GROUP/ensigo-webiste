@@ -2,7 +2,7 @@ import React, { Activity, ReactNode } from 'react'
 
 export interface Props {
     heading: string | ReactNode
-    caption?: string
+    caption?: string | ReactNode
     className?:string
     leftAlign?: boolean
 }

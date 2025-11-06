@@ -1,6 +1,5 @@
 import React from 'react'
 import Hero from '@/components/screen/contact/Hero'
-import ContactUs from '@/components/screen/contact/ContactUs'
 import Forms from '@/components/screen/contact/Forms'
 import Information from '@/components/screen/contact/Information'
 import RegionalInfo from '@/components/screen/contact/RegionalInfo'

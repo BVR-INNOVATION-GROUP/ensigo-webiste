@@ -11,19 +11,17 @@ const page = () => {
   return (
     <div>
       <Hero />
-      <Container>
-        <About />
-      </Container>
+      <About />
       <div className="bg-[var(--dark)]">
         <Container>
           <Features />
         </Container>
       </div>
-        <div>
-          <Container>
-            <FunctionW />
-          </Container>
-        </div>
+      <div>
+        <Container>
+          <FunctionW />
+        </Container>
+      </div>
       <Solutions />
       <Experience />
     </div>
