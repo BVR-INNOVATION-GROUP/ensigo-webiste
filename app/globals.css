@@ -1,6 +1,3 @@
-/* 1️⃣ Place @import at the very top */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
-
 /* 2️⃣ Then Tailwind import */
 @import "tailwindcss";
 
@@ -8,7 +5,6 @@
 @layer base {
   :root {
     --font-poppins: 'Poppins', sans-serif;
-
     --primary: #1d7c2e;
     --foreground: #f9f9f9;
     --background: #f4f4f4;
@@ -50,6 +46,9 @@
   }
   .font-impact {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  }
+  .font-sans {
+    font-family: var(--font-poppins);
   }
   .font-serif {
     font-family: "Times New Roman", Times, serif;
