@@ -5,10 +5,7 @@ import { SendHorizontal } from "lucide-react";
 const Forms = () => {
   return (
     <div className="bg-gray-345 py-10">
-      <form
-        action=""
-        className=" bg-white rounded-2xl p-8 flex flex-col gap-6"
-      >
+      <form action="" className=" bg-white rounded-2xl p-8 flex flex-col gap-6">
         {/* First & Last Name Row */}
         <div className="flex flex-col md:flex-row gap-6">
           <div className="flex-1">
@@ -76,10 +73,20 @@ const Forms = () => {
             Inquiry Type
           </label>
           <input
+            list="inquiry-types"
             type="text"
-            placeholder="Booking"
+            placeholder="Select or type inquiry type"
             className="w-full rounded-lg p-3 focus:outline-none bg-gray-100"
           />
+          <datalist id="inquiry-types">
+            <option value="Partnership Opportunities" />
+            <option value="Volunteer Application" />
+            <option value="Corporate Sponsorship" />
+            <option value="Media & Press" />
+            <option value="Research Collaboration" />
+            <option value="General Inquiry" />
+            <option value="Technical Support" />
+          </datalist>
         </div>
 
         {/* Message */}
@@ -96,13 +103,11 @@ const Forms = () => {
 
         {/* Buttons */}
         <div className="flex justify-end gap-4 mt-6">
-          <Button title="Back to Home" 
-           className="bg-gray-200 rounded-[5]"
-          />
+          <Button title="Back to Home" className="bg-gray-200 rounded-[5]" />
 
           <Button
             title="Send"
-            rightIcon ={<SendHorizontal className="w-4 h-4"/>}
+            rightIcon={<SendHorizontal className="w-4 h-4" />}
             variant="fill"
           />
         </div>
