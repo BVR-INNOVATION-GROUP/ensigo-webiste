@@ -5,7 +5,7 @@ import React from "react";
 const Program = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-stretch bg-[var(--foreground)]">
-      {/* Left side - Full-cover image with centered overlay text */}
+      {/* Left side */}
       <div className="relative w-full md:w-1/2 h-64 sm:h-96 md:h-auto flex items-center justify-center">
         <img
           src="/images/Rectangle 89.png"

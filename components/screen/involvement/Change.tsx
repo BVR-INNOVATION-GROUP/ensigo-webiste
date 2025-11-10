@@ -5,9 +5,7 @@ import React from "react";
 const Change = () => {
   return (
     <div className="w-full flex flex-col md:flex-row items-stretch bg-[var(--foreground)]">
-      {/* Left side - Content */}
-      <div className="w-full flex flex-col md:flex-row items-stretch bg-[var(--foreground)]">
-        {/* Left side - Content */}
+        {/* Left side  */}
         <div className="w-full md:w-1/2 flex flex-col justify-center px-4 sm:px-6 md:px-16 py-12 md:py-16 gap-6">
           <SectionHeader
             heading={
@@ -32,7 +30,7 @@ const Change = () => {
           </div>
         </div>
 
-        {/* Right side - Full-cover image */}
+        {/* Right side */}
         <div className="relative w-full md:w-1/2 h-64 sm:h-96 md:h-auto">
           <img
             src="https://images.pexels.com/photos/9169913/pexels-photo-9169913.jpeg"
@@ -41,7 +39,6 @@ const Change = () => {
           />
         </div>
       </div>
-    </div>
   );
 };
 
