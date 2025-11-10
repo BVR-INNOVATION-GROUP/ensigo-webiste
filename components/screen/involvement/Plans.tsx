@@ -15,7 +15,7 @@ const Plans = () => {
               <span className="text-green-700 text-xl font-bold">
                 $25/month
               </span>
-              <span className="text-gray-600 text-sm">
+              <span className="text-black-600 text-sm font-bold">
                 Plants 50 trees annually
               </span>
               <ul className="list-disc pl-5 text-gray-600 space-y-1 mt-2 text-sm">
@@ -41,15 +41,15 @@ const Plans = () => {
                 Forest Guardian
               </span>
               <span className="text-green-700 text-xl font-bold">
-                $50/month
+                $100/month
               </span>
-              <span className="text-gray-600 text-sm">
-                Restores 100 trees annually
+              <span className="text-black-600 text-sm font-bold">
+                Plants 200 trees + supports 1 community member
               </span>
               <ul className="list-disc pl-5 text-gray-600 space-y-1 mt-2 text-sm">
-                <li>Monthly updates</li>
-                <li>Digital certificate</li>
-                <li>Priority dashboard access</li>
+                <li>Quarterly video updates</li>
+                <li>GPS coordinates of your forest</li>
+                <li>Invitation to virtual events</li>
               </ul>
             </div>
             <button className="mt-4 bg-green-700 text-white font-medium py-3 px-6 rounded w-full text-center">
@@ -61,18 +61,18 @@ const Plans = () => {
           <InfoCard leftAlign={true}>
             <div className="flex flex-col gap-2">
               <span className="text-sm text-gray-500 mb-5 font-medium">
-                Forest Steward
+                Ecosystem Champion
               </span>
               <span className="text-green-700 text-xl font-bold">
-                $100/month
+                $500/month
               </span>
-              <span className="text-gray-600 text-sm">
-                Adopts 1 acre of forest
+              <span className="text-black-600 text-sm font-bold">
+                Plants 1,000 trees + employs 5 community members
               </span>
               <ul className="list-disc pl-5 text-gray-600 space-y-1 mt-2 text-sm">
-                <li>Monthly updates</li>
-                <li>Digital certificate</li>
-                <li>Impact dashboard & report</li>
+                <li>Personal impact reports</li>
+                <li>Site visit opportunity</li>
+                <li>Recognition on website</li>
               </ul>
             </div>
             <button className="mt-4 bg-gray-100 text-green-700 font-medium py-3 px-6 rounded w-full text-center">
