@@ -7,7 +7,6 @@ const RegionalInfo = () => {
        <SectionHeader 
          heading ="Our Regional Offices"
          caption ="Connect with our teams across africa"
-
          leftAlign={false}
        />
     </div>

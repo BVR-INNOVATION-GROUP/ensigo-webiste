@@ -26,34 +26,34 @@ const FunctionW = () => {
   ];
 
   return (
-    <div className="w-full min-h-[80vh] py-[10vh] px-8 font-sans text-black flex flex-col justify-center">
+    <div className="w-full min-h-[80vh] py-[10vh] px-8 text-sm text-black flex flex-col justify-center">
       {/* Section Header */}
-      <div className="font-sans mb-4">
+      <div className="mb-4">
         <SectionHeader heading="How Ensigo Trace Works" leftAlign={true} />
       </div>
 
       {/* Steps */}
-      <div className="space-y-4 font-sans">
+      <div className="space-y-4">
         {steps.map((step, index) => (
           <div key={index} className="flex items-start gap-3 font-sans">
             {/* Number */}
-            <span className="text-xl font-semibold underline text-black/40 min-w-[32px]">
+            <span className="text-xl underline text-black/40 min-w-[32px]">
               {String(index + 1).padStart(2, "0")}
             </span>
 
             {/* Content */}
-            <div className="flex-grow font-sans">
+            <div className="flex-grow">
               <SectionHeader
                 heading={step.heading}
                 leftAlign={true}
-                className="text-lg font-semibold text-black"
+                className="text-sm "
               />
 
               <SectionHeader
                 caption={step.caption}
                 heading=""
                 leftAlign={true}
-                className="text-base text-black/70 leading-relaxed"
+                className="text-sm text-black/70 leading-relaxed"
               />
             </div>
           </div>

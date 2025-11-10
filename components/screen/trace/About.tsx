@@ -3,29 +3,37 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="w-full h-[390] p-6 shadow-md font-sans flex flex-col justify-between">
+    <div className=" px-6 md:px-16 py-12 font-sans flex flex-col gap-6 md:gap-10] bg-[var(--background)] font-sans">
       {/* Section Header */}
-      <SectionHeader 
-        heading={<>What is Ensigo <span className="text-primary">Trace?</span></>}
-        leftAlign={true}
-        className="tope-1/2 translate-y-22"
-      />
       <SectionHeader
-        caption={`Ensigo Trace is our proprietary technology platform that combines
-blockchain, satellite imaging, IoT sensors, and mobile applications to
-create an unprecedented level of transparency and accountability in
-reforestation projects. Every tree planted through Ensigo Africa gets
-a unique digital identity that follows it throughout its lifecycle.
-
-This creates a permanent, tamper-proof record that partners, donors,
-and stakeholders can trust. By leveraging cutting-edge technology,
-we're solving one of the biggest challenges in environmental
-conservation: proving impact. With Ensigo Trace, every claim is
-verifiable, every tree is trackable, and every impact is measurable.`}
+        heading={
+          <span>
+            What is Ensigo <span className="text-primary">Trace?</span>
+          </span>
+        }
         leftAlign={true}
+      />
 
-        className="tope-1/2 -translate-y-22" heading={""}      />
+      {/* Caption Text */}
+      <SectionHeader heading="" 
+       caption={<span className="leading-relaxed text-sm  max-w-4xl font-sans">
+        Ensigo Trace is our proprietary technology platform that combines
+        blockchain, satellite imaging, IoT sensors, and mobile applications to
+        create an unprecedented level of transparency and accountability in
+        reforestation projects. Every tree planted through Ensigo Africa gets a
+        unique digital identity that follows it throughout its lifecycle.
+        <br />
+        <br />
+        This creates a permanent, tamper-proof record that partners, donors, and
+        stakeholders can trust. By leveraging cutting-edge technology, we are
+        solving one of the biggest challenges in environmental conservation:
+        proving impact. With Ensigo Trace, every claim is verifiable, every tree
+        is trackable, and every impact is measurable.
+      </span>}
+      leftAlign={true}
+      />
     </div>
+    
   );
 };
 
