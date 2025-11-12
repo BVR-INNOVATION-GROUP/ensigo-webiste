@@ -3,7 +3,6 @@ import Hero from '@/components/screen/involvement/Hero'
 import React from 'react'
 import Plantee from '@/components/screen/involvement/Plantee'
 import Container from '@/components/base/Container'
-import Support from '@/components/screen/involvement/Support'
 import Plans from '@/components/screen/involvement/Plans'
 import Opportunity from '@/components/screen/involvement/Opportunity'
 import Apply from '@/components/screen/involvement/Apply'
@@ -18,10 +17,11 @@ const page = () => {
             <Container>
                 <Plantee />
             </Container>
-            <Support />
+            <div className='bg-[var(--very-dark-background)]'>
             <Container>
                 <Plans />
             </Container>
+            </div>
                 <Opportunity />
                 <Apply />
             <Program />

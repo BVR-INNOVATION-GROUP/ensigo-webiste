@@ -32,10 +32,10 @@ const Sidebar: React.FC<Props> = ({ open, close, links }) => {
         {/* Close button */}
         <button
           onClick={close}
-          className="absolute top-6 right-6 text-black hover:opacity-70 transition bg-primary flex gap-1 font-78 rounded items-center p-1"
+          className="absolute top-6 right-6 hover:opacity-70 transition flex gap-1 font-78 rounded items-center p-1"
         >
           <X size={20} />
-          Close
+        
         </button>
 
         {/* Links */}

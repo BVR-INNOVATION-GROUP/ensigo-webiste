@@ -12,9 +12,11 @@
     --dark: #010a00;
     --primary-dark: #1c732c;
     --primary-very-dark: #4a4f32;
+    --very-dark-background: #f0f0f0f0;
     --placeholder: #cfcfcf;
     --gradient: linear-gradient(140deg, #1d7c2e, #80b64d);
     --secondary: #80b64d;
+    --secondary-dark:#E8C34A;
     --very-dark-color: #292929;
   }
 

@@ -24,7 +24,7 @@ const Button: React.FC<ButtonI> = ({ title, disabled, variant, rightIcon, leftIc
     return (
         <button
             {...attr}
-            disabled={disabled} className={`flex gap-3 px-4 py-2.5 ${variant == "outline-bottom" ? "border-b " : variant == "fill" ? getBackgroundColor() + " rounded" : variant == "outline" ? "" : ""} ${className}`}
+            disabled={disabled} className={`flex items-center text-center gap-3 px-4 py-2.5 ${variant == "outline-bottom" ? "border-b " : variant == "fill" ? getBackgroundColor() + " rounded" : variant == "outline" ? "" : ""} ${className}`}
 
         >
             {leftIcon && leftIcon}

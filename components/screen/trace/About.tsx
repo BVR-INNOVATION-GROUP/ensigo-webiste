@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className=" px-6 md:px-16 py-12 font-sans flex flex-col gap-6 md:gap-10] bg-[var(--background)] font-sans">
+    <div className=" px-6 md:px-16 py-29 flex flex-col gap-6 md:gap-10">
       {/* Section Header */}
       <SectionHeader
         heading={

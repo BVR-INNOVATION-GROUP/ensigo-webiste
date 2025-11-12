@@ -11,10 +11,10 @@ const Experience = () => {
        />
 
       <div className="flex flex-col sm:flex-row gap-4">
-        <button className="bg-green-800 text-white font-semibold px-8 py-3 rounded-full hover:bg-green-700 transition-all duration-300 shadow-md">
+        <button className="bg-[var(--primary-dark)] text-[var(--foreground)] px-8 py-3 rounded-full transition-all duration-300 shadow-md">
           Schedule a Demo
         </button>
-        <button className="border-2 border-green-800 text-green-800 font-semibold px-8 py-3 rounded-full hover:bg-green-50 transition-all duration-300">
+        <button className="border-2 border-primary text-primary px-8 py-3 rounded-full transition-all duration-300">
           Download White Paper
         </button>
       </div>

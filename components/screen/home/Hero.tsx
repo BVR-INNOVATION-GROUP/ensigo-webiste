@@ -10,11 +10,11 @@ const Hero = () => {
             <div className='absolute -z-10 w-full h-full bg-black/30' />
 
 
-            <h1 className="text-4xl  font-serif max-w-[40vw]">
+            <h1 className="sm:text-4xl   text-2xl font-serif sm:max-w-[40vw] max-w-[90vw] ">
                 Restoring Biodiversity through  Africa's Native Tree Seed System
             </h1>
 
-            <p className='max-w-[50vw] my-10'>Millions of trees are planted every year across Africa — yet too few survive. Ensigo Africa is fixing that by building a tech-driven native seed network that ensures every tree planted is traceable, viable, and ecologically appropriate.</p>
+            <p className='sm:max-w-[50vw]  max-w-[90vw] my-10 '>Millions of trees are planted every year across Africa — yet too few survive. Ensigo Africa is fixing that by building a tech-driven native seed network that ensures every tree planted is traceable, viable, and ecologically appropriate.</p>
 
             <div className="flex items-center gap-4">
                 <Button title='Explore Ensigo Trace' variant='fill' color='dark' />

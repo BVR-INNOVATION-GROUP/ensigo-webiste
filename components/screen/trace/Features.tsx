@@ -13,35 +13,35 @@ const Features = () => {
       name: "Satellite Monitoring",
       description:
         "Local communities are at the heart of every project, ensuring cultural relevance and long-term sustainability.",
-      icon: <SatelliteDish className="w-4 h-4 text-white" />,
+      icon: <SatelliteDish className="w-4 h-4 text-[var(--foreground)]" />,
     },
     {
       name: "Real-Time Data",
       description:
         "Advanced satellite imagery tracks forest health, growth rates, and environmental impact over time.",
-      icon: <AudioWaveform className="w-4 h-4 text-white" />,
+      icon: <AudioWaveform className="w-4 h-4 text-[var(--foreground)]" />,
     },
     {
       name: "Impact Analytics",
       description:
         "Comprehensive dashboards showing environmental and social impact metrics.",
-      icon: <ChartNoAxesCombined className="w-4 h-4 text-white" />,
+      icon: <ChartNoAxesCombined className="w-4 h-4 text-[var(--foreground)]" />,
     },
     {
       name: "Species Tracking",
       description:
         "Monitor biodiversity improvements and track individual species populations.",
-      icon: <ClipboardClock className="w-4 h-4 text-white" />,
+      icon: <ClipboardClock className="w-4 h-4 text-[var(--foreground)]" />,
     },
   ];
 
   return (
     <div
-      className="min-h-[600px] px-6 sm:px-10 py-16 relative font-sans"
+      className="min-h-[600px] px-6 sm:px-10 py-20 relative font-sans"
       style={{ backgroundColor: "var(--dark)" }}
     >
       {/* Key Features heading at top-left */}
-      <h3 className="absolute top-6 left-6 font-semibold text-white text-xl">
+      <h3 className="absolute left-6 font-semibold text-white text-xl">
         <span className="text-primary">Key</span> Features
       </h3>
 
@@ -55,14 +55,14 @@ const Features = () => {
           >
             {/* Feature name and icon */}
             <div className="flex items-center gap-3">
-              <span className="w-8 h-8 rounded-full bg-[#393939] flex items-center justify-center flex-shrink-0">
+              <span className="w-10 h-10 rounded-full bg-[#393939] flex items-center justify-center flex-shrink-0">
                 {step.icon}
               </span>
-              <h4 className="font-semibold text-xl text-white">{step.name}</h4>
+              <h4 className="font-semibold text-[var(--foreground)]">{step.name}</h4>
             </div>
 
             {/* Feature description */}
-            <p className="text-gray-400 leading-relaxed text-[15px]">
+            <p className="text-gray-400 leading-relaxed">
               {step.description}
             </p>
           </div>
@@ -70,7 +70,7 @@ const Features = () => {
       </div>
 
       {/* View all at bottom-right */}
-      <h3 className="absolute bottom-6 right-6 underline font-sans text-xl text-primary cursor-pointer hover:text-primary/80">
+      <h3 className="absolute right-6 underline text-primary cursor-pointer hover:text-primary/80">
         view all
       </h3>
     </div>

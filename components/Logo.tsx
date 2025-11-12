@@ -1,8 +1,14 @@
+import Link from "next/link"
 import React from "react"
 
+
+
 const Logo: React.FC<{ mode?: "light" | "dark" }> = ({ mode = "dark" }) => {
+    
     return (
-        <div className={`font-bold text-xl ${mode != "light" ? "text-primary" : "text-white"}`}>Ensigo</div>
+        <Link href={"/"}>
+         <div className={`font-bold cursor-pointer text-xl ${mode != "light" ? "text-primary" : "text-white"}`}>Ensigo</div>
+        </Link>
     )
 }
 

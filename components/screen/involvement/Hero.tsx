@@ -11,10 +11,10 @@ const Hero = () => {
 
       {/* Text content in front */}
       <div className="relative z-10 text-center">
-        <h2 className="text-8xl font-impact">
+        <h2 className="sm:text-8xl  text-7xl font-impact">
           <span className="opacity-30">GET</span> INVOLVED
         </h2>
-        <p className="mt-6 max-w-[40%] mx-auto">
+        <p className="mt-6 sm:max-w-[40%] max-w-[80%] mx-auto">
           Join thousands of individuals and organizations making a real
           difference in Africa's environmental future
         </p>
