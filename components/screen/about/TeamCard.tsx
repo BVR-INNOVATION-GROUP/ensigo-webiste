@@ -5,7 +5,7 @@ export interface TeamCardI extends HTMLAttributes<HTMLDivElement> {
     photo: string
     name: string
     title: string
-    bio: string
+    bio?: string
 }
 
 const TeamCard: React.FC<TeamCardI> = ({ photo, name, title, bio, className, ...attr }) => {

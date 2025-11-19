@@ -7,9 +7,8 @@ const Card: React.FC<{ title: string; paragraph: string; bg?: string }> = ({
 }) => {
   return (
     <div
-      className={`bg-paper ${
-        bg && "transform sm:-translate-y-8"
-      } rounded-2xl relative flex flex-col items-start justify-center py-10 px-6 md:py-[5vw] md:px-[6vw] flex-1 ${bg}`}
+      className={`bg-paper ${bg && "transform sm:-translate-y-8"
+        } rounded-2xl relative flex flex-col items-start justify-center py-10 px-6 md:py-[5vw] md:px-[6vw] flex-1 ${bg}`}
     >
       {/* top left mark */}
       {!bg && (
