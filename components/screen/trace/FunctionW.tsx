@@ -26,7 +26,7 @@ const FunctionW = () => {
   ];
 
   return (
-    <div className="w-full min-h-[80vh] py-[10vh] px-8 text-sm text-black flex flex-col justify-center">
+    <div className="w-full px-4 py-20 flex flex-col justify-center">
       {/* Section Header */}
       <div className="mb-4">
         <SectionHeader heading="How Ensigo Trace Works" leftAlign={true} />
@@ -35,25 +35,20 @@ const FunctionW = () => {
       {/* Steps */}
       <div className="space-y-4">
         {steps.map((step, index) => (
-          <div key={index} className="flex items-start gap-3 font-sans">
+          <div key={index} className="flex items-start gap-3">
             {/* Number */}
-            <span className="text-xl underline text-black/40 min-w-[32px]">
+            <span className=" underline text-black/40 min-w-[32px]">
               {String(index + 1).padStart(2, "0")}
             </span>
 
             {/* Content */}
-            <div className="flex-grow">
-              <SectionHeader
-                heading={step.heading}
-                leftAlign={true}
-                className="text-sm "
-              />
-
+            <div className="">
+              <h3>{step.heading}</h3>
               <SectionHeader
                 caption={step.caption}
-                heading=""
+                heading
                 leftAlign={true}
-                className="text-sm text-black/70 leading-relaxed"
+                className="text-black/40"
               />
             </div>
           </div>

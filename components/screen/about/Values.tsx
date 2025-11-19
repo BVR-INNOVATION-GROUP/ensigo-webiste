@@ -33,10 +33,10 @@ const Values = () => {
             <SectionHeader heading='Our Core Values' />
             <div className="flex flex-col gap-3">
 
-                <div className="flex gap-3">
+                <div className="sm:flex gap-3 ">
                     {values?.slice(0, 2)?.map((v, i) => <IconCardInline {...v} key={i} />)}
                 </div>
-                <div className="flex gap-3">
+                <div className="sm:flex gap-3">
                     {values?.slice(2, 4)?.map((v, i) => <IconCardInline {...v} key={i} />)}
                 </div>
 

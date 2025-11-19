@@ -3,11 +3,11 @@ import React, { ReactNode } from "react";
 interface InfoCardProps {
   heading?: string | ReactNode;
   icon?: ReactNode;
-  address?: string;
-  email?: string;
-  phone?: string;
+  address?: string | ReactNode;
+  email?: string | ReactNode;
+  phone?: string | ReactNode;
   className?: string;
-  location?: string;
+  location?: string | ReactNode;
   description?: string;
   children?: ReactNode;
   buttonText?: string;
@@ -34,13 +34,13 @@ const InfoCard: React.FC<InfoCardProps> = ({
 
   return (
     <div
-      className={`flex-1 bg-white p-8 md:p-12 flex flex-col justify-between relative ${
+      className={`flex-1 bg-[var(--foreground)] rounded-2xl p-8 md:p-12 flex flex-col justify-between relative ${
         className ?? ""
       }`}
     >
       {icon && (
         <div
-          className={`flex justify-center mb-4 ${
+          className={`rounded-full w-14 h-14 flex items-center justify-center mb-4 ${
             leftAlign ? "justify-start" : ""
           }`}
         >
@@ -52,7 +52,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
 
       {/* Heading and description */}
       {heading && (
-        <h3 className={`text-xl font-semibold ${textAlignment} mb-2`}>
+        <h3 className={`font-semibold text-[var(--primary-dark)] ${textAlignment} mb-2`}>
           {heading}
         </h3>
       )}
@@ -62,7 +62,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
         </p>
       )}
       {address && (
-        <p className={`text-gray-700 font-medium ${textAlignment}`}>
+        <p className={`text-gray-700 ${textAlignment}`}>
           {address}
         </p>
       )}
@@ -95,7 +95,7 @@ const InfoCard: React.FC<InfoCardProps> = ({
       {buttonText && (
         <button
           onClick={onButtonClick}
-          className="w-full bg-gray-100 text-[var(--primary-dark)] font-medium py-3 text-center mt-4"
+          className="w-full bg-[var(--background)] text-[var(--primary-dark)] font-medium py-3 text-center mt-4"
         >
           {buttonText}
         </button>

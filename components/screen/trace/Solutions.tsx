@@ -34,26 +34,26 @@ const Solutions = () => {
   ];
 
   return (
-    <div className="bg-[#008000] min-h-screen p-10 text-white flex flex-col items-center font-sans">
-      <div className="max-w-6xl w-full flex flex-col items-center gap-8">
+    <div className="bg-primary min-h-screen py-15 px-4 flex flex-col items-center">
+      <div className="max-w-6xl w-full flex flex-col items-center gap-4 py-4">
         {/* Section Header */}
         <SectionHeader heading="Our Solutions" leftAlign={false} />
 
         {/* Top two containers */}
-        <div className="flex justify-center gap-8 w-full">
+        <div className="flex justify-center flex flex-col md:flex-row gap-4 w-full">
           {solutions.slice(0, 2).map((solution, index) => (
             <div
               key={index}
-              className="bg-[#1C732C] p-6 w-full md:w-5/12 max-w-sm transition-all duration-300"
+              className="bg-[var(--primary-dark)] p-6 w-full md:w-5/12 max-w-sm transition-all duration-300"
             >
-              <h2 className="text-2xl font-bold mb-3 text-white">{solution.title}</h2>
+              <h2 className="font-bold mb-3">{solution.title}</h2>
               <div className="space-y-2">
                 {solution.features.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-4 h-4 flex items-center justify-center mt-0.5">
-                      <Check className="w-3 h-3 text-white" />
+                      <Check className="w-3 h-3" />
                     </div>
-                    <p className="text-gray-300 text-sm">{feature}</p>
+                    <p>{feature}</p>
                   </div>
                 ))}
               </div>
@@ -66,16 +66,16 @@ const Solutions = () => {
           {solutions.slice(2, 3).map((solution, index) => (
             <div
               key={index}
-              className="bg-[#1C732C] p-6 w-full md:w-5/12 max-w-sm transition-all duration-300 "
+              className="bg-[var(--primary-dark)] p-6 w-full md:w-5/12 max-w-sm mx-auto md:mx-0 transition-all duration-300 "
             >
-              <h2 className="text-2xl font-bold mb-3 text-white">{solution.title}</h2>
+              <h2 className="font-bold mb-3 ">{solution.title}</h2>
               <div className="space-y-2">
                 {solution.features.map((feature, idx) => (
                   <div key={idx} className="flex items-start gap-3">
                     <div className="flex-shrink-0 w-4 h-4 flex items-center justify-center mt-0.5">
-                      <Check className="w-3 h-3 text-white" />
+                      <Check className="w-3 h-3" />
                     </div>
-                    <p className="text-gray-300 text-sm">{feature}</p>
+                    <p>{feature}</p>
                   </div>
                 ))}
               </div>

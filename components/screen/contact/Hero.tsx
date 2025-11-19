@@ -9,6 +9,7 @@ const Hero = () => {
       <div
         className="relative w-full min-h-[50vh] sm:min-h-[60vh] lg:min-h-[80vh] xl:min-h-[90vh] bg-cover bg-center"
         style={{
+          backgroundPositionY: -350,
           backgroundImage:
             "url('https://images.pexels.com/photos/5244076/pexels-photo-5244076.jpeg')",
         }}

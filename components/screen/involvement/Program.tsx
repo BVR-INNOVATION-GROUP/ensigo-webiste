@@ -45,12 +45,12 @@ const Program = () => {
         <div className="flex flex-col sm:flex-row gap-4">
           <Button
             title={"School Partnerships"}
-            className="bg-gray-200 text-gray-800 font-medium py-3 px-6 rounded-lg hover:bg-gray-300 transition w-full sm:w-auto"
+            className="bg-gray-200 text-gray-800 font-medium py-3 px-6 justify-center rounded-lg transition w-full sm:w-auto"
           />
 
           <Button
             title={"Explore Youth Programs"}
-            className="bg-green-600 text-white font-medium py-3 px-6 rounded-lg hover:bg-green-700 transition w-full sm:w-auto"
+            className="bg-primary font-medium  items-center text-center py-3 px-6 justify-center rounded-lg transition w-full sm:w-auto"
           />
         </div>
       </div>

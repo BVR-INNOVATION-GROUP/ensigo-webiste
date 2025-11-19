@@ -5,7 +5,7 @@ import SectionHeader from "@/components/base/SectionHeader";
 
 const Hero = () => {
   return (
-    <div className="relative min-h-screen flex flex-col items-center justify-center text-center font-[Poppins] text-white">
+    <div className="relative min-h-screen flex flex-col items-center justify-center text-center font-[Poppins] text-[var(--foreground)]">
       {/* Background Image */}
       <Image
         src="/images/forest-bg.png" 
@@ -34,7 +34,7 @@ const Hero = () => {
           title="Request Demo"
           variant="fill"
           color="primary"
-          className="text-white font-semibold px-8 py-3 rounded-full transition-all duration-300 hover:bg-[#35E254]"
+          className="font-semibold px-8 py-3 rounded-full transition-all duration-300"
         />
       </div>
     </div>
